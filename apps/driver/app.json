@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "FleetOS Driver",
+    "slug": "fleetos-driver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "fleetos-driver",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#1A3C6E"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.fleetos.driver",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "FleetOS needs your location to update trip status.",
+        "NSLocationAlwaysUsageDescription": "FleetOS needs your location in the background to track your trip route.",
+        "NSCameraUsageDescription": "FleetOS needs camera access to capture delivery proof photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1A3C6E"
+      },
+      "package": "com.fleetos.driver",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-camera",
+      "expo-image-picker",
+      "expo-notifications"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    }
+  }
+}

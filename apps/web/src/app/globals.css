@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #1A3C6E;
+    --accent: #F97316;
+    --secondary: #0EA5E9;
+    --success: #16A34A;
+    --warning: #D97706;
+    --error: #DC2626;
+    --bg-light: #F8FAFC;
+    --text-dark: #1E293B;
+    --text-muted: #64748B;
+  }
+
+  body {
+    background-color: #F8FAFC;
+    color: #1E293B;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}

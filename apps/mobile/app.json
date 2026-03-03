@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "FleetOS",
+    "slug": "fleetos-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "fleetos",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#1A3C6E"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.fleetos.mobile",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "FleetOS needs your location to track fleet vehicles.",
+        "NSLocationAlwaysUsageDescription": "FleetOS needs your location in the background to track fleet vehicles.",
+        "NSCameraUsageDescription": "FleetOS needs camera access to capture delivery proof photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1A3C6E"
+      },
+      "package": "com.fleetos.mobile",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-camera",
+      "expo-image-picker",
+      "expo-notifications"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    }
+  }
+}
