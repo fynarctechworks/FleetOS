@@ -32,12 +32,6 @@
         "android.permission.RECORD_AUDIO"
       ]
     },
-    "plugins": [
-      "expo-location",
-      "expo-camera",
-      "expo-image-picker",
-      "expo-notifications"
-    ],
     "extra": {
       "eas": {
         "projectId": "21ced314-f503-4745-9cce-80b7c48364d2"
